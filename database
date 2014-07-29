@@ -1,0 +1,56 @@
+{"_type":"group","name":"family","_id":"5BTA2h4QeIiPDP61"}
+{"name":"John","lastname":"Doe","phone":"444-444-444","email":"john@doe.com","address":"Nashville, USA","_type":"contact","_id":"Juq01hymmU9uS3a3"}
+{"_type":"group","name":"San Francisco","_id":"LrUNquJuJnTqXdx0"}
+{"name":"Kurt","lastname":"Cobain","phone":"999-999-999","email":"kurt@nirvana.com","address":"Heaven, next to Elvis","_type":"contact","_id":"SHFgWJCOf3PfrHhy","id":"SHFgWJCOf3PfrHhy","groups":["celebrities"]}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["celebrities","San Francisco","work"]}
+{"_type":"group","name":"Spain","_id":"fBScxTcZbTZAkmD8"}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["San Francisco","geeks","celebrities"]}
+{"_type":"group","name":"New York","_id":"uRE8DfVdRLDp8qwQ"}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["celebrities","work"]}
+{"$$deleted":true,"_id":"LrUNquJuJnTqXdx0"}
+{"name":"Kurt","lastname":"Cobain","phone":"999-999-999","email":"kurt@nirvana.com","address":"Heaven, next to Elvis","_type":"contact","_id":"SHFgWJCOf3PfrHhy","id":"SHFgWJCOf3PfrHhy","groups":["celebrities"]}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["celebrities","work"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["geeks","celebrities"]}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["celebrities","work"]}
+{"_type":"group","name":"celebrities","_id":"8JoKMF5RS8ajXtDR"}
+{"$$deleted":true,"_id":"8JoKMF5RS8ajXtDR"}
+{"name":"Kurt","lastname":"Cobain","phone":"999-999-999","email":"kurt@nirvana.com","address":"Heaven, next to Elvis","_type":"contact","_id":"SHFgWJCOf3PfrHhy","id":"SHFgWJCOf3PfrHhy","groups":[]}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["work"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["geeks"]}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["work"]}
+{"$$deleted":true,"_id":"uRE8DfVdRLDp8qwQ"}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["work"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["geeks"]}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["work"]}
+{"$$deleted":true,"_id":"5BTA2h4QeIiPDP61"}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["work"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["geeks"]}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["work"]}
+{"$$deleted":true,"_id":"fBScxTcZbTZAkmD8"}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["work"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["geeks"]}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["work"]}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":[]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["friends"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":[]}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":[]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":[]}
+{"_type":"group","name":"California","_id":"4wCLFRPyz8lE3FyU"}
+{"_type":"group","name":"family","_id":"APxvGJtcWvIFsolr"}
+{"_type":"group","name":"friends","_id":"kdtQKbOpF920RNS0"}
+{"_type":"group","name":"work","_id":"txlhXUC0ABlTs78h"}
+{"_type":"group","name":"celebrities","_id":"UJOhSpcz4K1qdeAa"}
+{"_type":"group","name":"geeks","_id":"iDci7H6UdAETQw2F"}
+{"_type":"group","name":"musicians","_id":"R7zmvD2p6c0c2377"}
+{"name":"Steve","lastname":"Ballmer","phone":"222-222-222","email":"developers@microsoft.com","address":"Redmond, Seattle","_type":"contact","_id":"yydpUS41PAnuJ8NT","id":"yydpUS41PAnuJ8NT","groups":["work","geeks"]}
+{"name":"Napoleón","lastname":"Bonaparte","phone":"111-222-333","email":"vive@lafrance.fr","address":"Paris, Francia","_type":"contact","_id":"jaJyT0w4dU6TYuFm","id":"jaJyT0w4dU6TYuFm","groups":["work","friends"]}
+{"name":"Kurt","lastname":"Cobain","phone":"999-999-999","email":"kurt@nirvana.com","address":"Heaven, next to Elvis","_type":"contact","_id":"SHFgWJCOf3PfrHhy","id":"SHFgWJCOf3PfrHhy","groups":["celebrities","musicians"]}
+{"name":"John","lastname":"Doe","phone":"444-444-444","email":"john@doe.com","address":"Nashville, USA","_type":"contact","_id":"Juq01hymmU9uS3a3","id":"Juq01hymmU9uS3a3","groups":["family"]}
+{"name":"Morgan","lastname":"Freeman","phone":"000-000-000","email":"deepvoice@gmail.com","address":"Hollywood, California","_type":"contact","_id":"cbogmqR7HIQj5Mnr","id":"cbogmqR7HIQj5Mnr","groups":["work","California"]}
+{"name":"Steve","lastname":"Jobs","phone":"555-555-555","email":"jobs@apple.com","address":"1 Infinite Loop, Cupertino","_type":"contact","_id":"kJkNhhfutg6Rubkd","id":"kJkNhhfutg6Rubkd","groups":["celebrities","geeks"]}

@@ -1,0 +1,454 @@
+@import 'values.scss';
+
+html {
+    font-size: 16px;
+}
+
+main {
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        display: block;
+        width: 92px;
+        height: 92px;
+        overflow: hidden;
+        margin: 0 auto;
+        background: $color-darker-blue;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $color-dark-blue;
+        color: white;
+        width: $menu-width;
+        margin-left: $menu-width-collapsed - $menu-width;
+        height: 100vh;
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
+
+        @include desktop {
+            margin-left: 0;
+        }
+    }
+
+    #menu.expanded {
+        margin-left: 0;
+    }
+
+    #content {
+        margin-left: $menu-width-collapsed;
+
+        @include desktop {
+            margin-left: 0;
+            padding-left: $menu-width + 20px;
+        }
+    }
+}
+
+#menu {
+
+    a.menu-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 200;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    nav {
+        /*
+        left toolbar icons and main menu links
+        */
+        list-style-type: none;
+        background: $color-darker-blue;
+        font-weight: 300;
+
+        li {
+            padding: 0;
+            text-align: center;
+
+            a {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    nav.collapsed-nav {
+        /*
+        left narrow toolbar for mobile displays
+        */
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: $menu-width-collapsed;
+        padding-top: 12px;
+
+        @include desktop {
+            display: none;
+        }
+
+        span {
+            display: block;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        span:hover {
+            color: $color-darker-blue;
+            background: white;
+        };
+    }
+
+    &.expanded nav.collapsed-nav {
+        display: none;
+    }
+
+    nav.main-nav {
+        /*
+        full width navigation
+        */
+
+        li a {
+            padding: 20px 0;
+            color: white;
+            outline: none;
+        }
+
+        li a:hover, li a:focus {
+            background: $color-darker-blue-trans;
+            text-decoration: none;
+        }
+    }
+
+
+    #profile {
+        /*
+        avatar and user name
+        */
+        margin: 60px 0 40px 0;
+        text-align: center;
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 100;
+        }
+
+    }
+}
+
+#content {
+    padding: 0 20px;
+
+    .add-contact {
+        float: left;
+        margin-bottom: 20px;
+
+        @include tablet-desktop {
+            width: 20%;
+            margin-top: 28px;
+            text-align: left;
+        }
+
+        a {
+            color: $color-add-link;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                text-decoration: none;
+                color: $color-add-link-hover;
+            }
+        }
+    }
+
+    .search {
+        position: relative;
+        margin: 20px 0;
+
+        @include tablet-desktop {
+            float: right;
+            width: 260px;
+        }
+
+        input {
+            height: 2.4em;
+            padding-right: 30px;
+        }
+
+        .clear {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #9a9a9a;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.contacts {
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+
+    .contact-list {
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border-bottom: 1px solid #ededed;
+        }
+
+        li.active {
+            border-bottom: none;
+        }
+
+        li.letter-header {
+            margin-top: 20px;
+            padding-bottom: 0;
+            font-weight: bold;
+            border-bottom: 1px solid #dadada;
+        }
+    }
+}
+
+.contact {
+
+    .contact-card {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        position: relative;
+
+        @include tablet-desktop {
+            flex-flow: row nowrap;
+        }
+
+        margin: 10px 0;
+        border: 1px solid #dadada;
+        padding: 10px;
+        box-shadow: 2px 2px 5px #dadada;
+    }
+
+    .portrait {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+
+        @include tablet-desktop {
+            width: 200px;
+            border-right: 1px solid #dadada;
+        }
+
+        .avatar {
+            margin-bottom: 20px;
+        }
+
+        .full-name {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+    }
+
+    .details,
+    .groups {
+        flex: 1;
+        padding: 10px 20px;
+    }
+
+    .display-name {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+    }
+
+    .display-name:hover {
+        background: #efefef;
+    }
+
+    &.active {
+
+        .display-name {
+            display: none;
+        }
+
+    }
+
+    .value-label {
+        font-weight: 200;
+        text-align: center;
+        word-break: break-word;
+
+        @include tablet-desktop {
+            text-align: left;
+        }
+
+        .value {
+            display: block;
+            font-weight: 600;
+        }
+    }
+
+    .contact-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .contact-close,
+    menu a {
+        color: $color-menu-action;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $color-menu-action-hover;
+        }
+    }
+
+    menu {
+        position: absolute;
+        bottom: -5px;
+        right: 15px;
+        
+        a:hover {
+            color: red;
+        }
+    }
+
+}
+
+.groups {
+
+    .contact-groups {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 5px 15px 0;
+        }
+
+        @include tablet-desktop {
+            text-align: left;
+        }
+
+        .label {
+            font-size: 1rem;
+            font-weight: 300;
+            background: white;
+            color: #333;
+            border: 1px solid #dadada;
+        }
+    }
+
+        .remove {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 0.8rem;
+            color: #999;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                color: red;
+                text-decoration: none;
+            }
+        }
+}
+
+#group-select {
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+    }
+}
+
+.add-contact-form {
+
+    .required {
+        color: red;
+    }
+
+    input[type=tel]:invalid,
+    input[type=email]:invalid {
+        border-color: red;
+    }
+
+    .alerts {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .alert {
+        padding: 8px 15px;
+    }
+}
+
+.add-group {
+
+    button[type=submit] {
+        margin-top: 10px;
+
+        @include tablet-desktop {
+            margin-top: 0;
+        }
+    }
+
+    .group-error {
+        margin: 20px 0 30px 0;
+        padding: 8px;
+
+        @include tablet-desktop {
+            display: inline-block;
+            margin: 0;
+        }
+    }
+
+}
+
+.group-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 20px;
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    li.notice {
+        font-size: 1rem;
+    }
+
+    .remove {
+        margin-left: 10px;
+    }
+}

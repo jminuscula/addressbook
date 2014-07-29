@@ -1,0 +1,32 @@
+
+$color-dark-blue: #34495E;
+$color-darker-blue: #2C3E50;
+$color-darker-blue-trans: rgba(41, 57, 74, 0.33);
+$color-menu-action: #dadada;
+$color-menu-action-hover: #666;
+$color-add-link: #27ae60;
+$color-add-link-hover: #2ecc71;
+
+$menu-width-collapsed: 50px;
+$menu-width: 280px;
+
+$desktop-size: 992px;
+$tablet-size: 768px;
+
+@mixin desktop {
+    @media only screen and (min-width: $desktop-size){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+        @content;
+    }
+}
+
+@mixin tablet-desktop {
+    @media only screen and (min-width: $tablet-size) {
+        @content;
+    }
+}

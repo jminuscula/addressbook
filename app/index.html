@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" ng-app="abApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Basic Address Book">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <title>Address Book</title>
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#3372DF">
+
+        <link rel="profile" href="http://microformats.org/profile/hcard">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- build:css styles/main.min.css -->
+        <link rel="stylesheet" href="styles/addressbook.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <main>
+            <section id="menu">
+                <a href="#" class="menu-close">✕</a>
+                <nav class="collapsed-nav" role="navigation">
+                    <li><span class="menu-open glyphicon glyphicon-user" href="#"></span></li>
+                    <li><span class="glyphicon glyphicon-list" ui-sref="contacts"></span></li>
+                    <li><span class="glyphicon glyphicon-briefcase" ui-sref="groups"></span></li>
+                </nav>
+                <div id="profile">
+                    <!-- <img class="avatar" title="avatar" src="http://placekitten.com/128/128"> -->
+                    <span class="avatar">
+                        <img title="avatar" src="http://lorempixel.com/92/92/">
+                    </span>
+                    <h1>Jacobo Tarragón</h1>
+                </div>
+                <nav class="main-nav" role="navigation">
+                    <li><a class="menu-action" ui-sref="contacts" tabindex="-1">contacts</a></li>
+                    <li><a class="menu-action" ui-sref="groups" tabindex="-1">groups</a></li>
+                </nav>
+            </section>
+            <section id="content" ui-view></section>
+        </main>
+    </main>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-resource.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.min.js"></script>
+    <script src="scripts/lib/angular-ui-router.min.js"></script>
+    <!-- build:js addressbook.min.js -->
+    <script src="addressbook.js"></script>
+    <script src="addressbook-data/addressbook-data.js"></script>
+    <script src="addressbook-contact-list/addressbook-contact.js"></script>
+    <script src="addressbook-contact-list/addressbook-contact-list.js"></script>
+    <script src="addressbook-contact-add/addressbook-contact-add.js"></script>
+    <script src="addressbook-group/addressbook-group.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

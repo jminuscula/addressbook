@@ -1,0 +1,51 @@
+<li class="contact vcard" ng-class="{true: 'active'}[active]">
+    <span class="display-name"
+        ng-click="display(contact)">{{ contact.displayName() }}</span>
+
+    <div class="contact-card" ng-show="active">
+        <span class="contact-close" ng-click="collapse()">✕</span>
+        <div class="portrait">
+            <span class="avatar">
+                <img title="avatar" src="http://lorempixel.com/92/92/?{{ contact.id }}">
+            </span>
+            <span class="full-name fn">{{ contact.name }} {{ contact.lastname }}</span>
+        </div>
+
+        <div class="details">
+            <p class="value-label tel">Phone number
+                <span class="value"><a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></span>
+            </p>
+            <p class="value-label email">Email
+                <span class="value"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span>
+            </p>
+            <p class="value-label adr">Address
+                <span class="value"><a href="https://www.google.com/maps/place/{{ contact.address }}">{{ contact.address }}</a></span>
+            </p>
+        </div>
+
+        <div class="groups">
+            <p class="value-label">Groups</p>
+            <ul class="contact-groups">
+                <li ng-repeat="group in contact.groups">
+                    <span class="tag label label-default">
+                      <span>{{ group }}</span>
+                      <a class="remove" ng-click="remove(contact, group)">
+                          <i class="glyphicon glyphicon-remove"></i>
+                      </a>
+                    </span>
+                </li>
+                <li class="add-group">
+                    <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#group-select">
+                        <i class="glyphicon glyphicon-plus"></i> add group
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <menu>
+            <a ng-click="delete(contact)">
+                <span class="delete glyphicon glyphicon-trash"></span>
+            </a>
+        </menu>
+    </div>
+</li>

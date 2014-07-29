@@ -1,0 +1,59 @@
+<div class="search form-group">
+    <input type="search" class="form-control" placeholder="search name or group" tabindex="0"
+        ng-model="search.contactQuery">
+    <span class="clear glyphicon glyphicon-remove-circle"
+        ng-click="search.contactQuery = ''"
+        ng-show="search.contactQuery.length"></span>
+</div>
+<div class="add-contact">
+    <a ui-sref="addcontact">
+        <i class="glyphicon glyphicon-plus"></i> add new contact
+    </a>
+</div>
+<div class="contacts">
+    <div class="contact-list">
+        <h2>Contacts</h2>
+        <ul>
+            <li ng-hide="contactsLoaded">loading…</li>
+            <li ng-show="contactsLoaded && !contacts.length">no contacts</li>
+            <contact
+                data="contact"
+                active="contact == activeContact"
+                display="displayContact"
+                collapse="collapseContacts"
+                delete="deleteContact"
+                remove="removeFromGroup"
+                addgroup="addActiveContactToGroup"
+                ng-repeat="contact in contacts | filter:contactSearch() | orderBy:'orderPredicate()'"
+            />
+        </ul>
+    </div>
+    <div id="group-select" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">groups</h4>
+          </div>
+          <div class="modal-body">
+              <ul>
+                  <li ng-repeat="group in activeContactRemainingGroups()">
+                      <button class="btn btn-sm"
+                          ng-class="{true: 'btn-success', false: 'btn-primary'}[isGroupSelected(group)]"
+                          ng-click="toggleSelectGroup(group)">
+                          {{ group }}</button>
+                  </li>
+              </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default"
+                data-dismiss="modal"
+                ng-click="cancelSelectGroups()">cancel</button>
+            <button type="button" class="btn btn-success"
+                data-dismiss="modal"
+                ng-click="addActiveContactToGroups()">save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

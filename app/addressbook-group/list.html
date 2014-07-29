@@ -1,0 +1,24 @@
+<h1>Groups</h1>
+<div class="add-group">
+    <form class="form-inline" role="form" ng-submit="addGroup()">
+        <div class="form-group">
+            <label class="sr-only" for="groupname">Group name</label>
+            <input type="text" class="form-control" id="groupname"
+                ng-model="newGroup.name"
+                placeholder="Name" required>
+             <button type="submit" class="btn btn-primary"
+                 ng-hide="groupExists()">add group</button>
+            <p class="group-error" ng-show="groupExists()">
+                <span class="alert alert-danger">Group already exists</span>
+            </p>
+        </div>
+    </form>
+</div>
+<ul class="groups group-list">
+    <li class="notice" ng-hide="groupsLoaded">loading…</li>
+    <li class="notice" ng-show="groupsLoaded && !groups.length">no groups</li>
+    <li ng-repeat="group in groups | orderBy:'toString()' ">
+        {{ group }}
+        <a class="remove" ng-click="deleteGroup(group)"><i class="glyphicon glyphicon-trash"></i> remove</a>
+    </li>
+</ul>
